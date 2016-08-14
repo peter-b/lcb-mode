@@ -555,7 +555,4 @@ Optional argument DIRECTION defines the direction to move in."
 
 (provide 'lcb-mode)
 
-;; Local variables:
-;; coding: utf-8
-;; indent-tabs-mode: nil
-;; End:
+;;; lcb-mode.el ends here

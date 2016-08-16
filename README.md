@@ -18,6 +18,32 @@ to your `.emacs` file:
 This associates `lcb-mode` with `.lcb` files.  To enable it
 explicitly, do <kbd>M-x lcb-mode</kbd>.
 
+## Package installation from MELPA
+
+It may be considerably easier to use Emacs' package manager to install
+`lcb-mode` for you.  If you haven't already added MELPA, the community
+package source, add this to your `.emacs` file:
+
+```elisp
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+```
+
+Once you've done this, you can load the package listing with:
+
+1. <kbd>M-x eval-buffer</kbd>
+2. <kbd>M-x package-refresh-contents</kbd>
+
+### Install `lcb-mode`
+
+Once MELPA has been added, you there are two ways to install `lcb-mode`:
+
+* choosing it from the package list, accessible with <kbd>M-x
+  package-list-packages</kbd>
+* <kbd>M-x package-install lcb-mode</kbd>
+
 ## Reporting bugs and contributing
 
 Please report any problems to the

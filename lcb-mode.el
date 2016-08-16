@@ -1,4 +1,4 @@
-;;; lcb-mode.el --- LiveCode Builder major mode for Emacs
+;;; lcb-mode.el --- LiveCode Builder major mode
 
 ;; Copyright (C) 2016  Peter Brett <peter@peter-b.co.uk>
 
@@ -546,8 +546,8 @@ Optional argument DIRECTION defines the direction to move in."
   (set (make-local-variable 'indent-line-function)
        #'lcb-indent-line-function)
 
-  (set (make-local-variable 'font-lock-defaults)
-       '(lcb-font-lock-keywords nil nil nil nil))
+  (setq font-lock-defaults
+        '(lcb-font-lock-keywords nil nil nil nil))
 
   (add-hook 'font-lock-extend-region-functions
             'lcb-font-lock-extend-region-whole-statement)
